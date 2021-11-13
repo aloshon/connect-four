@@ -217,6 +217,14 @@ const colors = [
     text: 'Platinum',
     value: '#E5E4E2'
   },
+  {
+    text: 'Black',
+    value: '#000000'
+  },
+  {
+    text: 'White',
+    value: '#F7F7F7'
+  },
 ];
 
 
