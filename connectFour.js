@@ -225,6 +225,10 @@ const colors = [
     text: 'White',
     value: '#F7F7F7'
   },
+  {
+    text: 'Purple',
+    value: '#FF00FF'
+  },
 ];
 
 
