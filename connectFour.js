@@ -77,6 +77,7 @@ class Game {
     const piece = document.createElement('div');
     piece.classList.add('piece');
     piece.style.backgroundColor = this.currPlayer.color;
+    piece.style.border = "1px black solid";
   
     const spot = document.getElementById(`${y}-${x}`);
     spot.append(piece);
@@ -195,7 +196,7 @@ const colors = [
   },
   {
     text: 'Ruby',
-    value: '#E0115F'
+    value: '#EE115F'
   },
   {
     text: 'Sapphire',
@@ -228,6 +229,10 @@ const colors = [
   {
     text: 'Purple',
     value: '#FF00FF'
+  },
+  {
+    text: 'Pink',
+    value: '#FFBBBB'
   },
 ];
 
