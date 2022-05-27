@@ -1,19 +1,38 @@
+body {
+  text-align:center;
+}
 
 /* game board table */
 
 #board td {
-  width: 50px;
-  height: 50px;
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
   border: solid 1px #666;
 }
 
-/* pieces are div within game table cells: draw as colored circles */
+/* pieces are div within game table cells */
 
 .piece {
-  margin: 5px;
+  margin: auto;
   width: 80%;
   height: 80%;
   border-radius: 50%;
+}
+
+.fall {
+  animation-name: fall;
+  animation-duration: 500ms;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-480px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 /* column-top is table row of clickable areas for each column */
@@ -36,6 +55,18 @@
 }
 
 #game {
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* button for starting a new game */
+
+#button {
+  padding: 5px;
+  margin: 5px;
 }
