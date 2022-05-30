@@ -245,9 +245,11 @@ colors.forEach(color => {
   colorList1.add(
     new Option(color.text, color.value)
   )
+  
   colorList2.add(
     new Option(color.text, color.value)
   )
+  
 });
 
 // piece is the color name, color is the color css value/hex decimal
