@@ -1,16 +1,23 @@
 body {
   text-align:center;
-  margin: 20px;
+  margin: 10px;
 }
 
 /* game board table */
 
 #board td {
-  width: 125px;
-  height: 125px;
+  width: 95px;
+  height: 95px;
   margin-left: auto;
   margin-right: auto;
   border: solid 1px #666;
+}
+
+@media (max-width: 800px) {
+  #board td {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /* pieces are div within game table cells */
@@ -60,7 +67,7 @@ body {
 }
 
 #game {
-  height: 150%;
+  height: 100%;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -68,11 +75,12 @@ body {
   align-items: center;
   margin-top: 30px;
   margin-left: 0px;
+  margin-bottom: 10px;
 }
 
 /* button for starting a new game */
 
 #button {
-  padding: 15px;
+  padding: 13px;
   margin: 20px 5px 5px 5px;
 }

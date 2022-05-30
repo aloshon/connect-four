@@ -115,7 +115,7 @@ class Game {
     
     // check for tie and give disappointed response if no one won
     if (this.board.every(row => row.every(cell => cell))) {
-      return this.endGame('Tie! You both suck smh...');
+      return this.endGame('Tie!');
     }
       
     // switch players if game has not ended
